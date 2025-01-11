@@ -6,7 +6,7 @@ mybtn.addEventListener('click',myShow)
 
 async function myShow(){
 
-    let response= await fetch("http://localhost:5000/employes")
+    let response= await fetch("http://localhost:3000/employes")
     let mydata= await response.json()
 
     let table=`<table>

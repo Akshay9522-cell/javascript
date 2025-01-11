@@ -11,7 +11,7 @@ const name=document.getElementById('name').value
 const id=document.getElementById('id').value
 const post=document.getElementById('post').value
 const salary=document.getElementById('salary').value
-const api="http://localhost:5000/employes"
+const api="http://localhost:3000/employes"
 
     fetch(api,{
         method: "POST",
