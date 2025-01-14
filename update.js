@@ -6,7 +6,7 @@ function dataUpdate(id)
     let city=document.getElementById("ct").value;
     let fees=document.getElementById("fs").value;
 
-    let api=`http://localhost:3000/students/${id}`;
+    let api=`http://localhost:3000/employes/${id}`;
     fetch(api, { 
         method: 'PUT', 
         headers: { 
@@ -27,7 +27,7 @@ function dataUpdate(id)
 
 function myDel(id)
 {
-     let api=`http://localhost:3000/students/${id}`;
+     let api=`http://localhost:3000/employes/${id}`;
      fetch(api, {method:'DELETE'}).then((res)=>{
         alert("Record Deleted!!!")
     })
@@ -36,7 +36,7 @@ function myDel(id)
 async function myEdit(id)
 {
     
-    let api=`http://localhost:3000/students/${id}`;
+    let api=`http://localhost:3000/employes/${id}`;
 
     const Obj= await fetch(api);
     //console.log(Obj);
@@ -91,17 +91,17 @@ async function dataShow(){
                               <td> 
                                
                                  <a href="#" onclick="myDel(${key.id})">
-                                   <img src="del.png" width="30" height="30" >
+                                   <img src="/images/images.png" width="30" height="30" >
                                   </a>
 
                                   <a href="#" onclick="myEdit(${key.id})">
-                                  <img src="edit.png" width="30" height="30" >
+                                  <img src="/images/edit.png" width="30" height="30" >
                                 </a>
                               
                               </td>
                        </tr>`       
         })
-
+qww 
         Table+="</table>";
     
         document.getElementById('show').innerHTML=Table;

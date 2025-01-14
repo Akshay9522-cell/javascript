@@ -1,12 +1,6 @@
 {
   "employes": [
     {
-      "name": "akshay",
-      "id": "1",
-      "post": "Full stack java developer",
-      "salary": 1000000000
-    },
-    {
       "name": "vivek",
       "id": "2",
       "post": "Full stack java developer",
@@ -23,12 +17,6 @@
       "name": "vivek",
       "post": "Python",
       "salary": "454375375"
-    },
-    {
-      "id": "77",
-      "name": "shree",
-      "post": "DEVLOPER",
-      "salary": "6780098"
     }
   ]
 }
